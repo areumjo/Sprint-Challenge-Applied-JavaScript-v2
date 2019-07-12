@@ -17,3 +17,47 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+const caroContainer = document.querySelector('.carousel-container');
+console.log(caroContainer);
+const test = Carousel();
+caroContainer.appendChild(test);
+
+function Carousel() {
+  const carouselDiv = document.createElement('div');
+
+  const leftBtn = document.createElement('div');
+  const imgOne = document.createElement('img');
+  const imgTwo = document.createElement('img');
+  const imgThree = document.createElement('img');
+  const imgFour = document.createElement('img');
+  const rightBtn = document.createElement('div');
+
+  carouselDiv.appendChild(leftBtn);
+  carouselDiv.appendChild(imgOne);
+  carouselDiv.appendChild(imgTwo);
+  carouselDiv.appendChild(imgThree);
+  carouselDiv.appendChild(imgFour);
+  carouselDiv.appendChild(rightBtn);
+
+  carouselDiv.classList.add('carousel');
+  leftBtn.classList.add('left-button');
+  rightBtn.classList.add('right-button');
+  leftBtn.textContent = " < ";
+  rightBtn.textContent = " > ";
+
+  imgOne.src = "./assets/carousel/mountains.jpeg"
+  imgTwo.src = "./assets/carousel/computer.jpeg"
+  imgThree.src = "./assets/carousel/trees.jpeg"
+  imgFour.src = "./assets/carousel/turntable.jpeg"
+
+  let curIndex = 0;
+  imgOne.style.display="block"
+  rightBtn.addEventListener('click', () => {
+    curIndex += 1;
+    console.log(curIndex);
+  })
+
+  console.log(curIndex);
+  return carouselDiv;
+}
