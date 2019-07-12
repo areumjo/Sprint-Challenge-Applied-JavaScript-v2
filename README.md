@@ -29,14 +29,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+    - When a web page is loaded, the browser creates a `D`ocument `O`bject `M`odel of the page. The DOM model is constructed as a tree of `Objects`. With the DOM, JavaScript gets all the power it needs to create dynamic HTML.
+    - JavaScript can change all the HTML elements/attributes in the page
+    - JavaScript can change all the CSS styles in the page
+    - JavaScript can remove/add HTML elements/attributes
+    - JavaScript can react to all existing HTML events in the page
+    - JavaScript can create new HTML events in the page
 
 2. What is an event?
+    - Every interaction a user has with a site is known as an `event` such as a click, moving the mouse, scrolling the page, pressing a key on the keyboard.
+    - These are all events on the page and the browser can detect all of them. 
+    - When an event happens on a page it is known as a trigger.
 
 3. What is an event listener?
+    - We can chose specific elements to listen to specific events and fires a callback when that event occurs. This is called an event listener.
+    - `.addEventListener()` takes two arguments. 
+        - 1) Argument one is the event to listen for. For instace, mouseclick, keypress, screen resize, and scroll. 
+        - 2) Argument two is the callback to fire when the event is triggered.
 
 4. Why would we convert a NodeList into an Array?
-
+    - `NodeList` is an arry-like object which means it has some of built-in methods to manipulate the object. However, it does not have useful methods like `.map()`, `.filter()`.
+    - In the complex html enviornment built with component, `Array.from.()` allows us to access elements in the array.
 5. What is a component?
+    - Components are the building block to modern application development. Being able to use HTML, CSS, and JS in a reusable way opens up new possibilities for web developers.
+    - JavaScript is used to consume the data and output the content into the DOM. JavaScript’s involvement in components is the glue that ties everything together.
 
 ### Git Set up
 
