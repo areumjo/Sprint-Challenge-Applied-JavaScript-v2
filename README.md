@@ -29,6 +29,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+- When a web page is loaded, the browser creates a `D`ocument `O`bject `M`odel of the page. The DOM model is constructed as a tree of `Objects`. With the DOM, JavaScript gets all the power it needs to create dynamic HTML.
 
 2. What is an event?
 
